@@ -1,0 +1,50 @@
+digraph G {
+
+node[shape=box, color="white", fontcolor="white"] { 
+
+marschner03 [label="Marschner, S. R.; Jensen, H. W.; Cammarano, M.; Worley, S. & Hanrahan, P. 
+Light scattering from human hair fibers 
+ACM Trans. Graph., 2003, 22, 780-791
+"]
+
+dEon2011 [label = "d'Eon, E.; Francois, G.; Hill, M.; Letteri, J. & Aubry, J.-M. 
+An Energy-Conserving Hair Reflectance Model 
+Computer Graphics Forum, 2011, 30, 1181-1187"]
+
+dEon2013 [label = "d’Eon , E.; Marschner, S. & Hanika, J. 
+Importance sampling for physically-based hair fiber models 
+SIGGRAPH Asia 2013 Technical Briefs, 2013"]
+
+dEon2014 [label = "d'Eon , E.; Marschner, S. & Hanika, J.
+A Fiber Scattering Model with Non-separable Lobes
+ACM SIGGRAPH 2014 Talks, 2014, 46:1-46:1"]
+
+yan2015 [label = "Yan, L.-Q.; Tseng, C.-W.; Jensen, H. W. & Ramamoorthi, R. 
+Physically-accurate Fur Reflectance: Modeling, Measurement and Rendering 
+ACM Trans. Graph., ACM, 2015, 34, 185:1-185:13"]
+
+chiang2016 [label = "Chiang, M. J.-Y.; Bitterli, B.; Tappan, C. & Burley, B. 
+A Practical and Controllable Hair and Fur Model for Production Path Tracing 
+Comput. Graph. Forum, 2016, 35, 275-283"]
+
+yan2017 [label = "Yan, L.-Q.; Jensen, H. W. & Ramamoorthi, R. 
+An Efficient and Practical Near and Far Field Fur Reflectance Model 
+ACM Trans. Graphics, 2017, 36"]
+
+yan2017bis [label = "Yan, L.-Q.; Sun, W.; Jensen, H. W. & Ramamoorthi, R. 
+A BSSRDF Model for Efficient Rendering of Fur with Global Illumination 
+ACM Trans. Graph., ACM, 2017, 36, 208:1-208:13"]
+
+}
+
+bgcolor="transparent"
+
+marschner03 -> dEon2011
+dEon2011 -> dEon2013
+dEon2011 -> dEon2014
+marschner03 -> yan2015
+yan2015 -> chiang2016
+chiang2016 -> yan2017bis
+yan2015 -> yan2017
+
+}
